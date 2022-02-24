@@ -1,0 +1,85 @@
+* {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background-color: hsla(0,16%,4%,1);
+}
+.cabecera {
+    padding: 30px;
+    border-top: 20px solid hsla(0,16%,4%,1);
+    border-bottom: 20px solid hsla(0,16%,4%,1);
+    background-color: hsla(0, 0%, 5%, 1);
+    display: flex;
+    justify-content: space-between;
+}
+.cabecera div {
+    margin: 10px;
+}
+.titulo h1 {
+    color: hsla(349, 82%, 48%, 1);
+}
+.menu {
+    display: none;
+    position:fixed;
+    top: 0;
+    right: 0px;
+    width: 250px;
+    height: 100%;
+    background-color: hsla(0, 0%, 5%, 1);
+    z-index: 1001;
+}
+.menu #cerrar_menu {
+    position: fixed;
+    margin: 10px;
+    right: 0;
+}
+.menu ul li {
+    display: block;
+    line-height: 55px;
+    font-size: 15px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.submenu{
+    display: none;
+}
+
+li:hover .submenu{
+    display: block;
+}
+input {
+    display: none;
+}
+label #mostrar_menu, label #cerrar_menu {
+    width: 25px;
+}
+#check:checked ~ .menu{
+    display: block;
+}
+.banner{
+    text-align: center;
+}
+.banner img {
+    width: 75%;
+}
+
+.principal h2 {
+    color: hsla(349, 82%, 48%, 1);
+}
+.enlaces {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    
+}
+.enlaces div {
+    background-color: hsla(0, 0%, 5%, 1);
+    border: 10px solid hsla(0, 0%, 5%, 1);
+    
+}
