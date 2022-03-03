@@ -6,12 +6,15 @@
     text-decoration: none;
 }
 body {
-    background-image: url(.);
+    background-image: url(../imagenes/fondo.gif);
 }
+
 .cabecera {
     padding: 30px;
-    border-top: 20px solid hsla(0,16%,4%,1);
-    border-bottom: 20px solid hsla(0,16%,4%,1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     background-color: hsla(300, 4%, 5%, 1);
     display: flex;
     justify-content: space-between;
@@ -61,10 +64,16 @@ label #mostrar_menu, label #cerrar_menu {
 #check:checked ~ .menu{
     width: 500px;
 }
-.banner{
+.principal{
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
-.banner img {
+.principal img {
     width: 75%;
 }
 
@@ -72,14 +81,14 @@ label #mostrar_menu, label #cerrar_menu {
     color: hsla(349, 82%, 48%, 1);
 }
 .enlaces {
-    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
+    margin-right: 25px;
+    margin-left: 25px;
     
 }
 .enlaces div {
     background-color: hsla(300, 4%, 5%, 1);
-    border: 10px solid hsla(300, 4%, 5%, 1);
     
 }
