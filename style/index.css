@@ -6,13 +6,13 @@
     text-decoration: none;
 }
 body {
-    background-color: hsla(0,16%,4%,1);
+    background-image: url(.);
 }
 .cabecera {
     padding: 30px;
     border-top: 20px solid hsla(0,16%,4%,1);
     border-bottom: 20px solid hsla(0,16%,4%,1);
-    background-color: hsla(0, 0%, 5%, 1);
+    background-color: hsla(300, 4%, 5%, 1);
     display: flex;
     justify-content: space-between;
 }
@@ -79,7 +79,7 @@ label #mostrar_menu, label #cerrar_menu {
     
 }
 .enlaces div {
-    background-color: hsla(0, 0%, 5%, 1);
-    border: 10px solid hsla(0, 0%, 5%, 1);
+    background-color: hsla(300, 4%, 5%, 1);
+    border: 10px solid hsla(300, 4%, 5%, 1);
     
 }
