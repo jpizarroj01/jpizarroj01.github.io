@@ -65,12 +65,9 @@ label #mostrar_menu, label #cerrar_menu {
     width: 500px;
 }
 .principal{
-    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    margin-left: 10px;
-    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 }
 .principal img {
@@ -83,12 +80,12 @@ label #mostrar_menu, label #cerrar_menu {
 .enlaces {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
-    margin-right: 25px;
-    margin-left: 25px;
+    justify-content: center;
     
 }
 .enlaces div {
     background-color: hsla(300, 4%, 5%, 1);
+    margin-left: 50px;
+    margin-right: 50px;
     
 }
