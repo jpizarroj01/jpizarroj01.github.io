@@ -9,13 +9,17 @@ body {
     background-image: url(../imagenes/fondo.gif);
 }
 
+.fondo {
+    background-color: hsla(300, 4%, 7%, 1);
+    margin-top: 10px;
+}
 .cabecera {
     padding: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 0px;
     margin-right: 0px;
-    background-color: hsla(300, 4%, 5%, 1);
+    background-color: hsla(300, 4%, 7%, 1);
     display: flex;
     justify-content: space-between;
 }
@@ -71,7 +75,8 @@ label #mostrar_menu, label #cerrar_menu {
     margin-bottom: 20px;
 }
 .principal img {
-    width: 75%;
+    width: 90%;
+    height: auto;
 }
 
 .principal h2 {
@@ -83,9 +88,23 @@ label #mostrar_menu, label #cerrar_menu {
     justify-content: center;
     
 }
+.enlaces img {
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.enlaces p {
+    margin-left: 10px;
+}
 .enlaces div {
-    background-color: hsla(300, 4%, 5%, 1);
+    background-color: hsla(300, 4%, 7%, 1);
+    border-radius: 10%;
+    width: 150px;
+    height: 7em;
+    margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 50px;
-    
+}
+.pie {
+    height: 100px;
 }
