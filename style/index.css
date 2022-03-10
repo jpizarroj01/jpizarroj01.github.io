@@ -56,6 +56,9 @@ body {
     transition-duration: 0.5s;
     transition-timing-function: linear;
 }
+#cerrar_menu , #mostrar_menu {
+    cursor: pointer;
+}
 .menu #cerrar_menu {
     margin: 10px;
     
@@ -87,26 +90,22 @@ label #mostrar_menu, label #cerrar_menu {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .principal img {
-    width: 80%;
+    width: 100%;
     height: auto;
 }
-@media only screen and (max-width: 750px){
-    .principal img {
-        width: 100%;
-        height: auto;
-    }
-}
-
 .principal h2 {
     color: hsla(349, 82%, 48%, 1);
 }
 .enlaces {
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
-
+    justify-content:space-between;
+    margin-left: 5%;
+    margin-right: 5%;
     
 }
 .enlaces img {
@@ -117,13 +116,14 @@ label #mostrar_menu, label #cerrar_menu {
 .enlaces a {
     font-size: 20px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 .enlaces div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: hsla(300, 4%, 7%, 1);
-    border-radius: 10%;
-    width: 280px;
+    border-radius: 10px;
+    width: 500px;
     height: 7em;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -138,4 +138,18 @@ label #mostrar_menu, label #cerrar_menu {
     background-color: hsla(300, 4%, 7%, 1);
     text-align: center;
     height:100%;
+}
+
+@media only screen and (max-width: 1333px){
+    .enlaces div {
+        width: 280px;
+    }
+}
+@media only screen and (max-width: 667px){
+    .enlaces {
+        justify-content: center;
+    }
+    .enlaces div {
+        width: 100%;
+    }
 }
