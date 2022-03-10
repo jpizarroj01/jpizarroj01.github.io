@@ -94,8 +94,9 @@ label #mostrar_menu, label #cerrar_menu {
     margin-right: 5%;
 }
 .principal img {
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 350px;
 }
 .principal h2 {
     color: hsla(349, 82%, 48%, 1);
@@ -139,6 +140,9 @@ label #mostrar_menu, label #cerrar_menu {
     text-align: center;
     height:100%;
 }
+.pie p {
+    font-size: 8px;
+}
 
 @media only screen and (max-width: 1333px){
     .enlaces div {
@@ -146,6 +150,9 @@ label #mostrar_menu, label #cerrar_menu {
     }
 }
 @media only screen and (max-width: 667px){
+    .principal img {
+        height: 150px;
+    }
     .enlaces {
         justify-content: center;
     }
