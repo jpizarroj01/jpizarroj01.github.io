@@ -112,6 +112,7 @@ label #mostrar_menu, label #cerrar_menu {
 }
 
 .pie {
+    position: flex;
     padding: 30px;
     margin-left: 0px;
     margin-right: 0px;
@@ -119,8 +120,14 @@ label #mostrar_menu, label #cerrar_menu {
     text-align: center;
     height:100%;
 }
-.pie p {
+.pie div{
+    margin-bottom: 10px;
+}
+.pie div p {
     font-size: 8px;
+}
+.pie div img{
+    width: 25px;
 }
 @media only screen and (max-width: 685px){
     .principal img {
