@@ -5,58 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../imagenes/favicon.png">
     <link rel="stylesheet" href="../style/reseter.css" type="text/css">
     <link rel="stylesheet" href="../style/normalize.css" type="text/css">
     <link rel="stylesheet" href="../style/formulario.css" type="text/css">
 </head>
 <body>
-<div class="grid-container">
-    <input type="checkbox" id="check">
-    <header class="cabecera">
-        <div class="titulo">
-            <h1>LUTERANIA REVERSED</h1>
-        </div>
-        <div class="boton_menu">
-            <label for="check">
-                <img src="../imagenes/desplegar_menu.svg" alt="icono para el menu" id="mostrar_menu">
-            </label>
-        </div>
-    </header>
-    <nav class="menu">
-        <label for="check">
-            <img src="./imagenes/cerrar_menu.png" alt="icono para el menu" id="cerrar_menu">
-        </label>
-        <ul>
-            <li><a href="./index.html">PÁGINA PRINCIPAL</a></li>
-            <li><a href="./public/descripcion.html">¿QUÉ ES LOST ARK?</a></li>
-            <li>GUIAS
-                <ul class="submenu">
-                    <li><a href="#">GUIA DE PERSONAJES</a></li>
-                    <li><a href="#">GUIA DE LEVEO 10-50</a></li>
-                    <li><a href="#">END GAME</a></li>
-                </ul>
-            </li>
-            <li><a href="#">¿QUÉ CLASE ESCOGER?</a></li>
-            <li>PÁGINAS DE INTERES
-                <ul class="submenu">
-                    <li><a href="https://www.playlostark.com/es-es">PÁGINA OFICIAL</a></li>
-                </ul>
-            </li>
-            <li><a href="#">SUPPORT</a>
-                <ul class="submenu">
-                    <li><a href="https://www.amazongames.com/es-es/support/lost-ark">SUPPORT LOST ARK</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <main class="principal">
-        <form id="identificacion">
-            
-            </form>
-    </main>
-    <footer class="pie">
-        <p>Copyright © 2022 Javier Pizarro Juncosa. All rights reserved. Game content and assets are trademarks of Smilegate RPG, Inc</p>
-    </footer>
+    <form action="../index.html" class="formulario">
+        <p>Nombre: <input type="text" name="nombre" size="40"></p>
+        <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+        <p>Sexo:
+            <input type="radio" name="hm" value="h"> Hombre
+            <input type="radio" name="hm" value="m"> Mujer
+        </p>
+        <p>Contraseña: <input type="password" name="password" minlength="6"></p>
+        <p>Fecha: <input type="date" name="fecha"></p>
+        <p>Color de usuario: <input type="color" name="colorElegido"></p>
+        <p>Escriba sus exigencias: <textarea name="texto" rows="4" cols="20"></textarea></p>
+        <select name="menu">
+            <option selected>...</option>
+            <optgroup label="Problemas de cuenta">
+              <option value="1">Robo de cuentea</option>
+              <option value="2">Suspension de la cuenta</option>
+            </optgroup>
+            <optgroup label="Problemas de mi personaje">
+              <option value="3">Personaje suspendido</option>
+              <option value="4">Personaje atascado</option>
+            </optgroup>
+            <optgroup label="Otras cosas">
+                <option value="5">No identifico mi problema</option>
+            </optgroup>
+          </select>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+    </form>
 </body>
 </html> 
