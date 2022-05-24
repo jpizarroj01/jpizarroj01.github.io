@@ -10,6 +10,13 @@
 body {
     background-image: url(../imagenes/fondo.gif);
 }
+a:hover {
+    color: hsla(349, 82%, 48%, 1);
+    animation-name: colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
 .cabecera { grid-area: header;}
 .menu { grid-area: nav;}
 .principal { grid-area: main;}
@@ -98,25 +105,35 @@ label #mostrar_menu, label #cerrar_menu {
     flex-wrap: wrap;
     justify-content: center;
 }
-.principal div{
-    margin: 10px;
-    display: flex;
-}
-.principal img{
-    object-fit: cover;
-    width: 100%;
-    height: 350px;
-}
-.texto {
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: 230px;
     padding: 20px;
-    background-color: hsla(300, 4%, 7%, 1);
-    
+    grid-gap: 30px;
 }
-.principal h2 {
-    color: hsla(349, 82%, 48%, 1);
-    animation-name: colores;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+.galeria_objetos {
+    position: relative;
+}
+.galeria_imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galeria_imagen:hover{
+    transform: scale(1.05);
+}
+.galeria_titulo{
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    background: linear-gradient(hsla(258,0%,100%,0.1),hsla(258,0%,0%,1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+.galeria_objetos:hover{
+    scale: (2,1px);
 }
 
 .pie {
@@ -136,6 +153,44 @@ label #mostrar_menu, label #cerrar_menu {
 }
 .pie div img{
     width: 25px;
+}
+@media(min-width:768px){
+    .galeria{
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    .galeria_objetos:nth-child(2){
+        grid-column-start: span 2;
+    }
+    .galeria_objetos:nth-child(6){
+        grid-column-start: span 2;
+    }
+    .galeria_objetos:nth-child(11){
+        grid-column-start: span 3;
+    }
+    .galeria_objetos:nth-child(13){
+        grid-column-start: span 2;
+    }
+}
+@media(min-width:1333px){
+    .galeria{
+        grid-template-columns: repeat(4,1fr);
+        
+    }
+    .galeria_objetos:nth-child(2){
+        grid-column-start: span 2;
+    }
+    .galeria_objetos:nth-child(6){
+        grid-column-start: span 2;
+    }
+    .galeria_objetos:nth-child(11){
+        grid-column-start: span 2;
+    }
+    
+    .galeria_objetos:nth-child(13){
+        grid-column-start: span 1;
+    }
+    
 }
 @media only screen and (max-width: 685px){
     .principal img {

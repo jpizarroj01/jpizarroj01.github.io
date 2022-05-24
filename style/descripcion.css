@@ -10,6 +10,14 @@
 body {
     background-image: url(../imagenes/fondo.gif);
 }
+a:hover {
+    color: hsla(349, 82%, 48%, 1);
+    animation-name: colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
 .cabecera { grid-area: header;}
 .menu { grid-area: nav;}
 .principal { grid-area: main;}
@@ -45,6 +53,10 @@ body {
 }
 .titulo h1 {
     color: hsla(349, 82%, 48%, 1);
+    animation-name: colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
 }
 .menu {
     position:fixed;
@@ -107,10 +119,15 @@ label #mostrar_menu, label #cerrar_menu {
 .texto {
     padding: 20px;
     background-color: hsla(300, 4%, 7%, 1);
+    text-align: justify;
     
 }
 .principal h2 {
     color: hsla(349, 82%, 48%, 1);
+    animation-name: colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
 }
 
 .pie {
@@ -136,4 +153,10 @@ label #mostrar_menu, label #cerrar_menu {
         height: 150px;
     }
 }
-
+@keyframes colores{
+    0%{color: hsla(349, 82%, 48%, 1)}
+    25%{color: hsla(61, 82%, 48%, 1)}
+    50%{color: hsla(124, 82%, 48%, 1)}
+    75%{color: hsla(194, 82%, 48%, 1)}
+    100%{color: hsla(291, 82%, 48%, 1)} 
+}
