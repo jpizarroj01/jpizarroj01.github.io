@@ -10,6 +10,9 @@
 body {
     background-image: url(../imagenes/fondo.gif);
 }
+a:hover {
+    color: hsla(349, 82%, 48%, 1);
+}
 .cabecera { grid-area: header;}
 .menu { grid-area: nav;}
 .principal { grid-area: main;}
@@ -153,7 +156,6 @@ label #mostrar_menu, label #cerrar_menu {
 .pie div img{
     width: 25px;
 }
-
 
 @media only screen and (max-width: 1333px){
     .enlaces div {
