@@ -12,6 +12,9 @@ body {
 }
 a:hover {
     color: hsla(349, 82%, 48%, 1);
+    animation-name: colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .cabecera { grid-area: header;}
 .menu { grid-area: nav;}
@@ -48,6 +51,9 @@ a:hover {
 }
 .titulo h1 {
     color: hsla(349, 82%, 48%, 1);
+    animation-name: colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .menu {
     position:fixed;
@@ -77,6 +83,7 @@ a:hover {
 }
 .submenu{
     display: none;
+    transition: dysplay 2s;
     
 }
 
@@ -107,6 +114,9 @@ label #mostrar_menu, label #cerrar_menu {
 }
 .principal h2 {
     color: hsla(349, 82%, 48%, 1);
+    animation-name: colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .enlaces {
@@ -174,4 +184,13 @@ label #mostrar_menu, label #cerrar_menu {
     .enlaces div {
         width: 100%;
     }
+}
+
+@keyframes colores{
+    0%{color: hsla(349, 82%, 48%, 1)}
+    25%{color: hsla(61, 82%, 48%, 1)}
+    50%{color: hsla(124, 82%, 48%, 1)}
+    75%{color: hsla(225, 82%, 48%, 1)}
+    100%{color: hsla(349, 82%, 48%, 1)}
+    
 }
