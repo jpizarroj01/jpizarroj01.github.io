@@ -77,10 +77,12 @@ a:hover {
 }
 .submenu{
     display: none;
+    
 }
 
 li:hover .submenu{
     display: block;
+    
 }
 input {
     display: none;
