@@ -178,7 +178,7 @@ label #mostrar_menu, label #cerrar_menu {
     grid-template-columns: repeat(1,1fr);
     grid-auto-rows: 230px;
     padding: 20px;
-    grid-gap: 10px;
+    grid-gap: 30px;
 }
 .galeria_objetos {
     position: relative;
@@ -188,6 +188,9 @@ label #mostrar_menu, label #cerrar_menu {
     height: 100%;
     object-fit: cover;
 }
+.galeria_imagen:hover{
+    transform: scale(1.05);
+}
 .galeria_titulo{
     position: absolute;
     bottom: 0;
@@ -196,6 +199,9 @@ label #mostrar_menu, label #cerrar_menu {
     width: 100%;
     margin: 0;
     padding: 10px;
+}
+.galeria_objetos:hover{
+    scale: (2,1px);
 }
 
 .enlaces {
@@ -271,9 +277,20 @@ label #mostrar_menu, label #cerrar_menu {
         grid-template-columns: repeat(4,1fr);
         
     }
-    .galeria_imagen:nth-child(2){
-        grid-column-start: 2;
+    .galeria_objetos:nth-child(2){
+        grid-column-start: span 2;
     }
+    .galeria_objetos:nth-child(6){
+        grid-column-start: span 2;
+    }
+    .galeria_objetos:nth-child(11){
+        grid-column-start: span 2;
+    }
+    
+    .galeria_objetos:nth-child(13){
+        grid-column-start: span 1;
+    }
+    
 }
 
 @media only screen and (max-width: 1000px){
@@ -298,6 +315,5 @@ label #mostrar_menu, label #cerrar_menu {
     25%{color: hsla(61, 82%, 48%, 1)}
     50%{color: hsla(124, 82%, 48%, 1)}
     75%{color: hsla(194, 82%, 48%, 1)}
-    90%{color: hsla(291, 82%, 48%, 1)}
-    
+    100%{color: hsla(291, 82%, 48%, 1)} 
 }
