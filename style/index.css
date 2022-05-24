@@ -36,6 +36,7 @@ a:hover {
     background-color: hsla(300, 4%, 7%, 1);
     margin-top: 10px;
 }
+/*Cabecera*/
 .cabecera {
     padding: 30px;
     margin-top: 20px;
@@ -55,6 +56,7 @@ a:hover {
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+/*Menu*/
 .menu {
     position:fixed;
     top: 0;
@@ -76,7 +78,7 @@ a:hover {
 }
 .menu ul li {
     display: block;
-    line-height: 55px;
+    line-height: 40px;
     font-size: 15px;
     padding-left: 40px;
     box-sizing: border-box;
@@ -100,6 +102,7 @@ label #mostrar_menu, label #cerrar_menu {
 #check:checked ~ .menu{
     width: 500px;
 }
+/*Ventana principal*/
 .principal{
     display: flex;
     align-items: center;
@@ -118,7 +121,7 @@ label #mostrar_menu, label #cerrar_menu {
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
-
+/*Enlaces de acceso rápido*/
 .enlaces {
     display: flex;
     flex-wrap: wrap;
@@ -150,6 +153,7 @@ label #mostrar_menu, label #cerrar_menu {
     align-items: center;
 
 }
+/*Pie de página*/
 .pie {
     position: flex;
     padding: 30px;
@@ -168,7 +172,7 @@ label #mostrar_menu, label #cerrar_menu {
 .pie div img{
     width: 25px;
 }
-
+/*adaptabilidad para moviles*/
 @media only screen and (max-width: 1333px){
     .enlaces div {
         width: 280px;
@@ -185,7 +189,7 @@ label #mostrar_menu, label #cerrar_menu {
         width: 100%;
     }
 }
-
+/*keyframe para el cambio de colores*/
 @keyframes colores{
     0%{color: hsla(349, 82%, 48%, 1)}
     25%{color: hsla(61, 82%, 48%, 1)}
