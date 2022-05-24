@@ -55,33 +55,33 @@
             </div>
             <form action="./formulario_enviado.html" class="formulario">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required size="50" pattern="[A-Za-z]{3,50}" title="El nombre solo puede contener letras">
                 <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos">
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required size="50" pattern="[A-Za-z]{3,50}" title="El nombre solo puede contener letras">
                 <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" minlength="6" placeholder="Contraseña">
+                <input type="password" id="password" name="password" minlength="6" placeholder="Contraseña" required size="12" pattern="[a-zA-Z0-9]{8,12}" title="La contraseña tiene que tener entre 8 y 12 caracteres">
                 <div>
                     <p>Introduzca su edad y la fecha de nacimiento.</p>
                     <label for="edad">Edad:</label>
-                    <input type="number" id="edad" name="edad" max="80" placeholder="Edad">
+                    <input type="number" id="edad" name="edad" max="80" placeholder="Edad" required size="3">
                     <label for="fecha">Fecha de nacimiento: </label>
-                    <input type="date" id="fecha" name="fecha">
+                    <input type="date" id="fecha" name="fecha" required size="10">
                 </div>
                 <p>Seleccione cual es su problema.</p><br>
-                <input type="checkbox" name="bugg" value="1">
+                <input type="checkbox" id="bugg" name="bugg" value="1">
                 <label for="bugg">Bug en la web</label><br><br>
-                <input type="checkbox" name="problemas_web" value="2">
+                <input type="checkbox" id="problemas_web" name="problemas_web" value="2">
                 <label for="problemas_web">Problemas con la cuenta</label><br><br>
-                <input type="checkbox" name="permiso_editor" value="3">
+                <input type="checkbox"  id="permiso_editor" name="permiso_editor" value="3">
                 <label for="permiso_editor">Solicitar un permiso para publicar articulos.</label><br><br>
-                <input type="checkbox" name="otro" value="4">
+                <input type="checkbox" id="otro" name="otro" value="4">
                 <label for="otro">Otra cuestion.</label><br><br><br>
                 <p>Indique con quien quiere contactar</p><br>
-                <input type="radio" id="co" name="co" value="1">
+                <input type="radio" id="co" name="personal" value="1" required>
                 <label for="co">C.O de la web</label><br><br>
-                <input type="radio" id="corresponsal" name="corresponsal" value="2">
+                <input type="radio" id="corresponsal" name="personal" value="2" required>
                 <label for="corresponsal">Corresponsal de Lost Ark</label><br><br>
-                <input type="radio" id="diseno" name="diseno" value="3">
+                <input type="radio" id="diseno" name="personal" value="3" required>
                 <label for="diseno">Jefe de diseño</label><br><br>
                 <p>Puede escrcibir en este texto en blanco cual es tu problema.</p>
                 <textarea name="texto" id="cp" cols="30" rows="10" placeholder="Escriba el motivo de la consulta"></textarea>
