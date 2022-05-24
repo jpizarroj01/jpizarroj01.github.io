@@ -25,7 +25,7 @@ body {
     'footer';
     gap: 20px;
 }
-
+/*Cabecera*/
 .cabecera {
     padding: 30px;
     margin-top: 20px;
@@ -49,52 +49,7 @@ body {
 .boton_inicio a:hover {
     color: hsla(0, 0%, 100%, 1);
 }
-.menu   {
-    color: hsla(0, 0%, 100%, 1);
-    position:fixed;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: hsla(0, 0%, 5%, 1);
-    z-index: 1001;
-    transition-property:width;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-}
-.menu a {
-    color: hsla(0, 0%, 100%, 1);
-}
-#cerrar_menu , #mostrar_menu {
-    cursor: pointer;
-}
-.menu #cerrar_menu {
-    margin: 10px;
-    
-}
-.menu ul li {
-    display: block;
-    line-height: 55px;
-    font-size: 15px;
-    padding-left: 40px;
-    box-sizing: border-box;
-}
-.submenu{
-    display: none;
-}
-
-li:hover .submenu{
-    display: block;
-}
-input {
-    display: none;
-}
-label #mostrar_menu, label #cerrar_menu {
-    width: 25px;
-}
-#check:checked ~ .menu{
-    width: 500px;
-}
+/*Ventana principal*/
 .principal{
     margin-left: 10px;
     margin-right: 10px;
@@ -127,7 +82,7 @@ label #mostrar_menu, label #cerrar_menu {
 .principal h2 {
     color: hsla(349, 82%, 48%, 1);
 }
-
+/*Pie de página*/
 .pie {
     color: hsla(0, 0%, 100%, 1);
     position:flex;
@@ -149,7 +104,7 @@ label #mostrar_menu, label #cerrar_menu {
 .pie div img{
     width: 25px;
 }
-
+/*estilos del formulario*/
 .principal > form  input{
     display: inline-block;
 }
@@ -223,6 +178,7 @@ input[type=text], input[type=password], select, textarea {
   input[type=reset]:hover {
     background-color: hsla(349, 67%, 59%, 1);
   }
+  /*keyframe para el cambio de colores*/
   @keyframes colores{
     0%{color: hsla(349, 82%, 48%, 1)}
     25%{color: hsla(61, 82%, 48%, 1)}

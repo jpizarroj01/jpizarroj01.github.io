@@ -157,6 +157,7 @@ label #mostrar_menu, label #cerrar_menu {
 .pie div img{
     width: 25px;
 }
+/*Adaptabilidad para moviles*/
 @media(min-width:768px){
     .galeria{
         grid-template-columns: repeat(3,1fr);
@@ -175,6 +176,7 @@ label #mostrar_menu, label #cerrar_menu {
         grid-column-start: span 2;
     }
 }
+/*Adaptabilidad para tablets*/
 @media(min-width:1333px){
     .galeria{
         grid-template-columns: repeat(4,1fr);
@@ -200,6 +202,7 @@ label #mostrar_menu, label #cerrar_menu {
         height: 150px;
     }
 }
+/*keyframe para el cambio de colores*/
 @keyframes colores{
     0%{color: hsla(349, 82%, 48%, 1)}
     25%{color: hsla(61, 82%, 48%, 1)}
