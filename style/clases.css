@@ -45,6 +45,9 @@ body {
 }
 .titulo h1 {
     color: hsla(349, 82%, 48%, 1);
+    animation-name: colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 .menu {
     position:fixed;
@@ -97,6 +100,7 @@ label #mostrar_menu, label #cerrar_menu {
 }
 .principal div{
     margin: 10px;
+    display: flex;
 }
 .principal img{
     object-fit: cover;
@@ -110,6 +114,9 @@ label #mostrar_menu, label #cerrar_menu {
 }
 .principal h2 {
     color: hsla(349, 82%, 48%, 1);
+    animation-name: colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .pie {
@@ -134,4 +141,11 @@ label #mostrar_menu, label #cerrar_menu {
     .principal img {
         height: 150px;
     }
+}
+@keyframes colores{
+    0%{color: hsla(349, 82%, 48%, 1)}
+    25%{color: hsla(61, 82%, 48%, 1)}
+    50%{color: hsla(124, 82%, 48%, 1)}
+    75%{color: hsla(194, 82%, 48%, 1)}
+    100%{color: hsla(291, 82%, 48%, 1)} 
 }
