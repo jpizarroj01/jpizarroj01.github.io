@@ -79,7 +79,7 @@ a:hover {
 }
 .menu ul li {
     display: block;
-    line-height: 40px;
+    line-height: 55px;
     font-size: 15px;
     padding-left: 40px;
     box-sizing: border-box;
@@ -108,10 +108,37 @@ label #mostrar_menu, label #cerrar_menu {
     flex-wrap: wrap;
     justify-content: center;
 }
-.principal div {
-    margin: 5px;
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: 230px;
+    padding: 20px;
+    grid-gap: 30px;
 }
-/*Pie de página*/
+.galeria_objetos {
+    position: relative;
+}
+.galeria_imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galeria_imagen:hover{
+    transform: scale(1.05);
+}
+.galeria_titulo{
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    background: linear-gradient(hsla(258,0%,100%,0.1),hsla(258,0%,0%,1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+.galeria_objetos:hover{
+    scale: (2,1px);
+}
+
 .pie {
     position: flex;
     padding: 30px;
@@ -121,7 +148,6 @@ label #mostrar_menu, label #cerrar_menu {
     text-align: center;
     height:100%;
 }
-
 .pie div{
     margin-bottom: 10px;
 }
@@ -131,14 +157,49 @@ label #mostrar_menu, label #cerrar_menu {
 .pie div img{
     width: 25px;
 }
-/*iframes para resolucion movil*/
-@media screen and (max-width: 600px) {
-    .principal div iframe{
-        width: 360px;
-        height: 200px;
+@media(min-width:768px){
+    .galeria{
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    .galeria_objetos:nth-child(2){
+        grid-column-start: span 2;
+    }
+    .galeria_objetos:nth-child(6){
+        grid-column-start: span 2;
+    }
+    .galeria_objetos:nth-child(11){
+        grid-column-start: span 3;
+    }
+    .galeria_objetos:nth-child(13){
+        grid-column-start: span 2;
     }
 }
-/*keyframe para el cambio de colores*/
+@media(min-width:1333px){
+    .galeria{
+        grid-template-columns: repeat(4,1fr);
+        
+    }
+    .galeria_objetos:nth-child(2){
+        grid-column-start: span 2;
+    }
+    .galeria_objetos:nth-child(6){
+        grid-column-start: span 2;
+    }
+    .galeria_objetos:nth-child(11){
+        grid-column-start: span 2;
+    }
+    
+    .galeria_objetos:nth-child(13){
+        grid-column-start: span 1;
+    }
+    
+}
+@media only screen and (max-width: 685px){
+    .principal img {
+        height: 150px;
+    }
+}
 @keyframes colores{
     0%{color: hsla(349, 82%, 48%, 1)}
     25%{color: hsla(61, 82%, 48%, 1)}
