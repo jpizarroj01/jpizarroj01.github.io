@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="./style/reseter.css" type="text/css">
     <link rel="stylesheet" href="./style/normalize.css" type="text/css">
     <link rel="stylesheet" href="./style/index.css" type="text/css">
+    <script src="./js/funcionalidades.js"></script>
 </head>
-<body>
+<body id="inicio">
     <div class="grid-container">
         <input type="checkbox" id="check">
         <header class="cabecera">
             <div class="titulo">
-                <h1>LUTERANIA REVERSED</h1>
+                <h1 id="ti">LUTERANIA REVERSED</h1>
             </div>
             <div class="boton_menu">
                 <label for="check">
@@ -28,53 +29,179 @@
                 <img src="../imagenes/cerrar_menu.png" alt="icono para el menu" id="cerrar_menu">
             </label>
             <ul>
-                <li><a href="./index.html">PÁGINA PRINCIPAL</a></li>
-                <li><a href="./public/descripcion.html">¿QUÉ ES LOST ARK?</a></li>
+                <li><a href="#inicio" onclick="inicio()">PÁGINA PRINCIPAL</a></li>
+                <li><a href="#inicio" onclick="descripcion()">¿QUÉ ES LOST ARK?</a></li>
                 <li><a href="#">GUIAS</a>
                     <ul class="submenu">
-                        <li><a href="./public/clases.html">GUIA DE PERSONAJES</a></li>
+                        <li><a href="#inicio" onclick="clases()">GUIA DE PERSONAJES</a></li>
                     </ul>
                 </li>
                 <li><a href="#">PÁGINAS DE INTERES</a>
                     <ul class="submenu">
-                        <li><a href="https://www.playlostark.com/es-es">PÁGINA OFICIAL</a></li>
+                        <li><a href="https://www.playlostark.com/es-es" target="_blank">PÁGINA OFICIAL</a></li>
+                        <li><a href="#inicio" onclick="galeria()">GALERÍA</a></li>
                     </ul>
                 </li>
                 <li><a href="#">SUPPORT</a>
                     <ul class="submenu">
-                        <li><a href="https://www.amazongames.com/es-es/support/lost-ark">SUPPORT LOST ARK</a></li>
+                        <li><a href="https://www.amazongames.com/es-es/support/lost-ark" target="_blank">SUPPORT LOST ARK</a></li>
                         <li><a href="./public/formulario.html">CONTACTO</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
-        <main class="principal">
-            <img src="../imagenes/baner_index.jpg" alt="imagen de rhogendel">
+        <main>
+            <div class="principal" id="princ">
+                <img src="../imagenes/baner_index.jpg" alt="imagen de rhogendel">
+            </div>
+            <div class="descripcion" id="descrip">
+                <img src="../imagenes/LostArk_HP_BG_LAUNCH.jpg" alt="imagen de inicio de lost ark">
+                <div class="texto">
+                    <h2>¿Que es Lost Ark?</h2>
+                    <p>Lost Ark es un videojuego para ordenador co-desarrollado por Tripod Studio y Smilegate RPG, una subsidiaria de la desarrolladora Smilegate. El título se lanzó en Corea del Sur en diciembre del 2019, pero en Europa y América no ha llegado hasta febrero del 2022. En estos continentes, el juego ha sido publicado por Amazon Games, la división de Amazon dedicada al desarrollo y distribución de videojuegos.</p>
+                    <p>El juego es lo que se conoce como un MMOARPG, siglas que significan que son un juego masivo y online de acción y RPG. Por lo tanto, es un juego de acción con elementos de rol como personajes que evolucionan y un árbol de habilidades, ambientado en un mundo de fantasía medieval, y con una vista isométrica de 2,5D, lo que viene a decir que todo se ve con una cámara aérea pero ligeramente ladeada, como en el mítico Diablo.</p>
+                    <p>En su llegada a Europa y América, Lost Ark ha tenido un éxito absolutamente rotundo, reventando casi todos los récords de Steam, y llegando a tener el segundo mayor pico de usuarios simultáneos de la historia de la plataforma, superado únicamente por 'PUBG: Battlegrounds' y por encima de juegos como 'CS:GO' y 'Dota 2'.</p>
+                    <p>Pero un éxito tan repentino también ha provocado algunos problemas que han ensombrecido el lanzamiento, como las enormes colas que hay que esperar para poder empezar a jugar online. Y es que los servidores tienen unas capacidades determinadas, y la cantidad de usuarios que estaban queriendo conectarse a jugar era demasiada para ellos. Por eso, van a abrir nuevos servidores en Europa.</p><br>
+                    <h2>Qué es lo que ofrece Lost Ark</h2>
+                    <p>Como todos los juegos del género MMOARPG, Lost Ark te propone un mundo de fantasía llamado Arkesia en el que puedes crear tu personaje personalizado y empezar a explorar, cumpliendo misiones para subir de nivel y ganar nuevas habilidades. Estas misiones las puedes hacer solo, pero el juego se disfruta más cuando creas equipos con otros jugadores.</p>
+                    <p>Durante el juego, vas a poder utilizar el sistema de chat de Lost Ark para chatear con otros jugadores, y esto le da una mayor profundidad a la hora de rolear. Encontrarás de todo, desde jugadores casuales hasta otros que se toman más en serio su rol, y escriben interpretando a su personaje. Estas posibilidades de interacción le dan a este tipo de juegos una mayor profundidad.</p>
+                    <p>En Lost Ark vas a encontrarte con actividades como la navegación, la recolección de objetos y la creación de fortalezas. Y a la hora de crear tu personaje, podrás diseñarlo con peinados, tonos de piel y diferentes ropas. Además de otros jugadores humanos, también encontrarás NPCs, personajes creados por los desarrolladores con textos fijos, y que te darán misiones o simplemente aportan datos y profundidad al universo del juego.</p>
+                    <p>En Lost Ark tendrás 5 clases de personaje únicas, cada una de ellas con una serie de especializaciones. Cada clase tiene habilidades diferentes, y cada especialización hace que puedas tener distintas habilidades dentro de una misma clase.</p>
+                    <p>Para ver todas las clases, pulse <a onclick="clases()"><span style="color: red;">AQUI</span></a>.</p>
+                </div>
+            </div>
+            <div class="clases" id="clas">
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/N3-AhX5k8ms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/eEfH3F8yvX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/YfnEJapwX6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/BgdopEiJJxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/zun9Nc-z47s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/cAG_fKHyJvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/MRGM5H5l5WU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/jPkfbUXUCps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/7VHjmDUMihU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/JiJog7NLFMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/HHyyUU6THvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/jjb29fQ5LrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/90mJXtaNzkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/PpvXqR8j1Ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="https://www.youtube.com/embed/r1nQF9chkZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+            <div class="galeria" id="gal">
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/2.jpg" alt="Foto con el coleccionista" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Foto con el coleccionista</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/1.jpg" alt="Fiesta en Anikka" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Fiesta en Anikka</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/3.jpg" alt="Entrando a Yorm" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Entrando a Yorm</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/6.jpg" alt="El principio del Caos" class="galeria_imagen">
+                    <h2 class="galeria_titulo">EL principio del Caos</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/5.jpg" alt="De nuevo en la guerra" class="galeria_imagen">
+                    <h2 class="galeria_titulo">De nuevo en la guerra</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/4.jpg" alt="Torres del Caos" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Torres del Caos</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/7.jpg" alt="Descansa mi comandante" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Descansa mi comandante</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/8.jpg" alt="Una isla inusual" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Una isla inusual</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/9.jpg" alt="Animales bailando" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Animales bailando</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/10.jpg" alt="Un nuevo destino, Punika" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Un nuevo destino, Punika</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/11.jpg" alt="Fiesta de los farolillos" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Fiesta de los farolillos</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/12.jpg" alt="Fiesta en Anikka" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Fiesta en Punika</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/13.jpg" alt="Foto de grupo" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Foto de grupo</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/14.jpg" alt="Comandantes" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Comandantes</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/15.jpg" alt="Incursión" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Incursión</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/16.jpg" alt="Batallón" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Batallón</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/17.jpg" alt="El inicio del fin" class="galeria_imagen">
+                    <h2 class="galeria_titulo">El inicio del fin</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/18.jpg" alt="El inicio del fin" class="galeria_imagen">
+                    <h2 class="galeria_titulo">El inicio del fin</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/19.jpg" alt="Foto con una maga" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Foto con una maga</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/20.jpg" alt="Foto con un artista marcial" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Foto con un artista marcial</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/21.jpg" alt="Descansando" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Descansando</h2>
+                </div>
+                <div class="galeria_objetos">
+                    <img src="./imagenes/galeria/22.jpg" alt="Con mi amigo de aventuras" class="galeria_imagen">
+                    <h2 class="galeria_titulo">Con mi amigo de aventuras</h2>
+                </div>
+            </div>
         </main>
-        <aside class="enlaces">
+        <aside class="enlaces" id="enlac">
             <div>
                     <img src="../imagenes/icono_mapa.svg" alt="icono mapa de lost ark">
-                    <a href="https://thelordoftheguides.com/mapa-lostark/">Mapa del mundo</a>
+                    <a href="https://thelordoftheguides.com/mapa-lostark/" target="_blank">Mapa del mundo</a>
             </div>
             <div>
                     <img src="../imagenes/icono_lost_ark.svg" alt="icono para la pagina oficial lost ark">
-                    <a href="https://forums.playlostark.com/">Foro Lost Ark</a>
+                    <a href="https://forums.playlostark.com/" target="_blank">Foro Lost Ark</a>
             </div>
             <div>
                     <img src="../imagenes/icono_youtube.svg" alt="icono para el canal de lost ark en you tube">
-                    <a href="https://www.youtube.com/c/PlayLostArk">You Tube</a>
+                    <a href="https://www.youtube.com/c/PlayLostArk" target="_blank">You Tube</a>
             </div>
             <div>
                     <img src="../imagenes/icono_twitter.svg" alt="icono para el twitter oficial de lost ark">
-                    <a href="https://twitter.com/playlostark">Twitter</a>
+                    <a href="https://twitter.com/playlostark" target="_blank">Twitter</a>
             </div>
             <div>
                     <img src="../imagenes/icono_instagram.svg" alt="icono para el instagram oficial de lost ark">
-                    <a href="#">Instagram</a>
+                    <a href="https://www.instagram.com/playlostark/?hl=es" target="_blank">Instagram</a>
             </div>
             <div>
                     <img src="../imagenes/icono_support.svg" alt="icono del support del juego">
-                    <a href="https://www.amazongames.com/es-es/support/lost-ark">Support Lost Ark</a>
+                    <a href="https://www.amazongames.com/es-es/support/lost-ark" target="_blank">Support Lost Ark</a>
             </div>
         </aside>
         <footer class="pie">
@@ -82,9 +209,9 @@
                 <p>Copyright © 2022 Javier Pizarro Juncosa. All rights reserved. Game content and assets are trademarks of Smilegate RPG, Inc</p>
             </div>
             <div>
-                <a href="https://twitter.com/?lang=es"><img src="./imagenes/icono_twitter.svg" alt="twitter"></a>
-                <a href="https://www.instagram.com/?hl=es"><img src="./imagenes/icono_instagram.svg" alt="instagram"></a>
-                <a href="https://github.com/jpizarroj01"><img src="./imagenes/github.svg" alt="github"></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="./imagenes/icono_twitter.svg" alt="twitter"></a>
+                <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="./imagenes/icono_instagram.svg" alt="instagram"></a>
+                <a href="https://github.com/jpizarroj01" target="_blank"><img src="./imagenes/github.svg" alt="github"></a>
             </div>
         </footer>
 </body>
