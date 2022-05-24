@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
 * {
+    color: white;
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -25,6 +26,10 @@ body {
     gap: 20px;
 }
 
+.fondo {
+    background-color: hsla(300, 4%, 7%, 1);
+    margin-top: 10px;
+}
 .cabecera {
     padding: 30px;
     margin-top: 20px;
@@ -41,8 +46,7 @@ body {
 .titulo h1 {
     color: hsla(349, 82%, 48%, 1);
 }
-.menu   {
-    color: white;
+.menu {
     position:fixed;
     top: 0;
     right: -250px;
@@ -53,9 +57,6 @@ body {
     transition-property:width;
     transition-duration: 0.5s;
     transition-timing-function: linear;
-}
-.menu a {
-    color: white;
 }
 #cerrar_menu , #mostrar_menu {
     cursor: pointer;
@@ -91,25 +92,16 @@ label #mostrar_menu, label #cerrar_menu {
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 .principal div{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: hsla(300, 4%, 7%, 1);
-    border-radius: 10px;
-    padding: 25px;
+    margin: 10px;
 }
 .principal img{
     object-fit: cover;
     width: 100%;
     height: 350px;
-}
-.principal p {
-    color: white;
 }
 .texto {
     padding: 20px;
@@ -121,16 +113,13 @@ label #mostrar_menu, label #cerrar_menu {
 }
 
 .pie {
-    color: white;
-    position:flex;
-    padding: 15px;
+    position: flex;
+    padding: 30px;
     margin-left: 0px;
     margin-right: 0px;
     background-color: hsla(300, 4%, 7%, 1);
     text-align: center;
-    width: 100%;
-    height:auto;
-    bottom: 0;
+    height:100%;
 }
 .pie div{
     margin-bottom: 10px;
@@ -141,66 +130,8 @@ label #mostrar_menu, label #cerrar_menu {
 .pie div img{
     width: 25px;
 }
-
-.principal > form  input{
-    display: inline-block;
+@media only screen and (max-width: 685px){
+    .principal img {
+        height: 150px;
+    }
 }
-.formulario {
-    background-color: hsla(300, 4%, 7%, 1);
-    border-radius: 10px;
-    padding: 25px;
-}
-.formulario  label {
-    color: white;
-}
-input[type=text], input[type=password], select, textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=number],input[type=date] {
-    width: 20%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  input[type=submit] {
-    width: 40%;
-    background-color: hsla(349, 82%, 48%, 1);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  input[type=reset] {
-    width: 40%;
-    background-color: hsla(349, 82%, 48%, 1);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .centrado {
-      display: flex;
-      justify-content: center;
-  }
-  input[type=submit]:hover {
-    background-color: hsla(349, 67%, 59%, 1);
-  }
-  input[type=reset]:hover {
-    background-color: hsla(349, 67%, 59%, 1);
-  }
