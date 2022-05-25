@@ -9,9 +9,11 @@ function formulario_enviado(){
             if (contrasena_persona.length >= 8 && contrasena_persona.length <= 12){
                 alert("Gracias por contactar con nosotros " + nombre_persona + " " + apellido_persona + ", procederemos a revisar el problema, mientras puede seguir navegando por la web");
             }
+            else alert("Error, rellene los campos");
         }
+        else alert("Error, rellene los campos");
     }
-    else alert("Error, rellene los campos")
+    else alert("Error, rellene los campos");
 }
 function usuario(){
     usuario_ = prompt("Escriba su nombre");
