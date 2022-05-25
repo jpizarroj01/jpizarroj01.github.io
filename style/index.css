@@ -16,6 +16,14 @@ a:hover {
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
+#name {
+    margin-right: 10px;
+    animation-name: colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-size: 25px;
+
+}
 .cabecera { grid-area: header;}
 .menu { grid-area: nav;}
 .principal { grid-area: main;}
