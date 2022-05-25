@@ -4,6 +4,8 @@ function formulario_enviado(){
     var nombre_persona = document.getElementById("nombre").value;
     var apellido_persona = document.getElementById("apellidos").value;
     var contrasena_persona = document.getElementById("password").value;
+    var edad = document.getElementById("edad").value;
+    var fecha = document.getElementById("fecha").value;
     if (nombre_persona.length > 0){
         if(apellido_persona.length > 0){
             if (contrasena_persona.length >= 8 && contrasena_persona.length <= 12){
