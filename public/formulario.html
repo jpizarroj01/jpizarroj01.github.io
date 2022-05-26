@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../style/reseter.css" type="text/css">
     <link rel="stylesheet" href="../style/normalize.css" type="text/css">
     <link rel="stylesheet" href="../style/formulario.css" type="text/css">
-    <script src="../js/funcionalidades.js"></script>
 </head>
 <body>
     <div class="grid-container">
@@ -29,7 +28,7 @@
                     <h2>Formulario de Contacto</h2>
                     <p>Rellene este formulario para que podamos contactar con usted.</p>
                 </div>
-                <form  class="formulario">
+                <form  class="formulario" name="formulario" id="formulario_id">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Nombre" required size="50" pattern="[A-Za-z]{3,50}" title="El nombre solo puede contener letras">
                     <label for="apellidos">Apellidos:</label>
@@ -44,42 +43,47 @@
                         <input type="date" id="fecha" name="fecha" required size="10">
                     </div>
                     <p>Seleccione cual es su problema.</p><br>
-                    <input type="checkbox" id="bugg" name="bugg" value="1">
+                    <input type="checkbox" id="bugg" name="a" value="1">
                     <label for="bugg">Bug en la web</label><br><br>
-                    <input type="checkbox" id="problemas_web" name="problemas_web" value="2">
+                    <input type="checkbox" id="problemas_web" name="b" value="2">
                     <label for="problemas_web">Problemas con la cuenta</label><br><br>
-                    <input type="checkbox"  id="permiso_editor" name="permiso_editor" value="3">
+                    <input type="checkbox"  id="permiso_editor" name="c" value="3">
                     <label for="permiso_editor">Solicitar un permiso para publicar articulos.</label><br><br>
-                    <input type="checkbox" id="otro" name="otro" value="4">
+                    <input type="checkbox" id="otro" name="d" value="4">
                     <label for="otro">Otra cuestion.</label><br><br><br>
                     <p>Indique con quien quiere contactar</p><br>
-                    <input type="radio" id="co" name="personal" value="1" required>
+                    <input type="radio" id="co" name="personal" value="C.O de la web" required>
                     <label for="co">C.O de la web</label><br><br>
-                    <input type="radio" id="corresponsal" name="personal" value="2" required>
+                    <input type="radio" id="corresponsal" name="personal" value="Corresponsal de Lost Ark" required>
                     <label for="corresponsal">Corresponsal de Lost Ark</label><br><br>
-                    <input type="radio" id="diseno" name="personal" value="3" required>
+                    <input type="radio" id="diseno" name="personal" value="Jefe de diseño" required>
                     <label for="diseno">Jefe de diseño</label><br><br>
                     <p>Puede escrcibir en este texto en blanco cual es tu problema.</p>
                     <textarea name="texto" id="cp" cols="30" rows="10" placeholder="Escriba el motivo de la consulta"></textarea>
                     <p>Escoja el departamento</p>
-                    <select name="deplegable">
+                    <select name="desplegable">
                         <option selected>...</option>
                         <optgroup label="Lost Ark">
-                        <option value="1">Diseñador</option>
-                        <option value="2">Programador</option>
-                        <option value="3">Marketing</option>
+                        <option value="Diseñador Lost Ark">Diseñador</option>
+                        <option value="Programador Lost Ark">Programador</option>
+                        <option value="Marketing Lost Ark">Marketing</option>
                         </optgroup>
                         <optgroup label="Amazon Games">
-                        <option value="4">Diseñador</option>
-                        <option value="5">Programador</option>
-                        <option value="6">Marketing</option>
+                        <option value="Diseñador Amazon Games">Diseñador</option>
+                        <option value="Programador Amazon Games">Programador</option>
+                        <option value="Marketing Amazon Games">Marketing</option>
                         </optgroup>
                     </select>
                     <div class="centrado">
-                        <input type="submit" value="Enviar" onclick="formulario_enviado()">
+                        <input type="submit" value="Enviar" id="enviar">
                         <input type="reset" value="Borrar">
                     </div>
                 </form>
+            </div>
+            <div class="formulario_enviado">
+                <div>
+                    <p id="datos"></p>
+                </div>
             </div>
         </main>
         <!-- Pie de página -->
@@ -93,5 +97,7 @@
                 <a href="https://github.com/jpizarroj01" target="_blank"><img src="../imagenes/github.svg" alt="github"></a>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="../js/formulario.js"></script>
 </body>
 </html> 
